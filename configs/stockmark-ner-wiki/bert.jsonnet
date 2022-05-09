@@ -4,9 +4,9 @@ local seed = 19950815;
 local num_epochs = 30;
 local batch_size = 256;
 
-local tng_data_path = "datasets/kwdlc/tng_ner.txt";
-local val_data_path = "datasets/kwdlc/val_ner.txt";
-local tst_data_path = "datasets/kwdlc/tst_ner.txt";
+local tng_data_path = "datasets/stockmark-ner-wiki/tng_ner.txt";
+local val_data_path = "datasets/stockmark-ner-wiki/val_ner.txt";
+local tst_data_path = "datasets/stockmark-ner-wiki/tst_ner.txt";
 
 local pretrained_transformer_mismatched = "pretrained_transformer_mismatched";
 local transformer_model_name = "cl-tohoku/bert-base-japanese-whole-word-masking";

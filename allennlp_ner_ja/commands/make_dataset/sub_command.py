@@ -33,9 +33,9 @@ class MakeDataset(Subcommand):
             required=True,
             help="ファイルまたはディレクトリのパスを指定する",
         )
-        subparser.add_argument("--tng-file", type=str, default="kwdlc_ner_tng.txt")
-        subparser.add_argument("--val-file", type=str, default="kwdlc_ner_val.txt")
-        subparser.add_argument("--tst-file", type=str, default="kwdlc_ner_tst.txt")
+        subparser.add_argument("--tng-file", type=str, default="tng_ner.txt")
+        subparser.add_argument("--val-file", type=str, default="val_ner.txt")
+        subparser.add_argument("--tst-file", type=str, default="tst_ner.txt")
         subparser.set_defaults(
             func=lambda args: make_dataset_from_args(
                 dataset_type=args.dataset_type,
